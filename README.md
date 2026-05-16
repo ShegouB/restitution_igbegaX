@@ -7,7 +7,7 @@
 ![Formspree](https://img.shields.io/badge/Formspree-Email%20Integration-FF5733?style=for-the-badge)
 ![Mobile First](https://img.shields.io/badge/Design-Mobile%20First-3DC9F5?style=for-the-badge)
 
-**Formulaire web multi-étapes pour la restitution trimestrielle des Leads de pôle de la communauté IGBEGA X.**
+**Formulaire web multi-étapes pour la restitution trimestrielle des Leads de pôle de la communauté Igbega X.**
 
 [Aperçu](#aperçu) · [Fonctionnalités](#fonctionnalités) · [Installation](#installation) · [Configuration](#configuration) · [Structure](#structure-du-projet) · [Personnalisation](#personnalisation)
 
@@ -17,7 +17,7 @@
 
 ## Aperçu
 
-Ce projet est une **application web statique** (fichier HTML unique, sans dépendances externes ni serveur) permettant aux Leads de pôle d'IGBEGA X de soumettre leur bilan trimestriel de façon structurée et professionnelle.
+Ce projet est une **application web statique** (fichier HTML unique, sans dépendances externes ni serveur) permettant aux Leads de pôle d'Igbega X de soumettre leur bilan trimestriel de façon structurée et professionnelle.
 
 Les réponses sont transmises automatiquement par email au Lead Général via **Formspree**.
 
@@ -70,10 +70,10 @@ Aucune installation requise. Il suffit d'ouvrir le fichier dans un navigateur :
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/votre-org/igbega-restitution.git
+git clone https://github.com/ShegouB/restitution_igbegaX.git
 
 # Ouvrir le fichier
-open igbega_final.html
+open index.html
 # ou double-cliquer sur le fichier
 ```
 
@@ -84,7 +84,7 @@ Le fichier peut être déployé sur n'importe quel hébergeur statique :
 **GitHub Pages**
 ```bash
 # Depuis la racine du repo
-git add igbega_final.html
+git add index.html
 git commit -m "deploy: formulaire restitution Q1"
 git push origin main
 # Activer GitHub Pages dans Settings > Pages > main / root
@@ -117,10 +117,10 @@ https://formspree.io/register
 
 Rechercher la ligne suivante dans `igbega_final.html` :
 ```javascript
-const res = await fetch('https://formspree.io/f/xkoydzeq', {
+const res = await fetch('https://formspree.io/f/xxxxxxx', {
 ```
 
-Remplacer `xkoydzeq` par votre propre Form ID :
+Remplacer `xxxxxxx` par votre propre Form ID :
 ```javascript
 const res = await fetch('https://formspree.io/f/VOTRE_FORM_ID', {
 ```
@@ -128,7 +128,7 @@ const res = await fetch('https://formspree.io/f/VOTRE_FORM_ID', {
 **4. Configuration actuelle**
 ```
 Endpoint  : https://formspree.io/f/xkoydzeq
-Email     : djagouboris@gmail.com
+Email     : xxxxxxx@gmail.com
 Sujet     : [IGBEGA X] Restitution Q1 2026
 ```
 
@@ -139,9 +139,9 @@ Sujet     : [IGBEGA X] Restitution Q1 2026
 ## Structure du projet
 
 ```
-igbega-restitution/
+restitution_igbegaX/
 │
-├── igbega_final.html       # Fichier principal (tout-en-un)
+├── index.html       # Fichier principal (tout-en-un)
 ├── README.md               # Cette documentation
 │
 └── assets/                 # (optionnel si logo externalisé)
@@ -151,7 +151,7 @@ igbega-restitution/
 ### Architecture interne du fichier HTML
 
 ```
-igbega_final.html
+index.html
 ├── <head>
 │   ├── Meta tags + viewport
 │   ├── Google Fonts (Plus Jakarta Sans)
@@ -342,14 +342,14 @@ chore:    Maintenance générale
 
 ## Licence
 
-Ce projet est la propriété de la communauté **IGBEGA X**.  
+Ce projet est la propriété de la communauté **Igbega X**.  
 Usage réservé aux membres et Leads de la communauté.
 
 ---
 
 <div align="center">
 
-Développé pour **IGBEGA X** · Lead Général · Q1 2026
+Développé pour **Igbega X** · Lead Général · Q1 2026
 
 ![Made with](https://img.shields.io/badge/Made%20with-HTML%20%2B%20CSS%20%2B%20JS-1B8FE3?style=flat-square)
 ![Formspree](https://img.shields.io/badge/Powered%20by-Formspree-FF5733?style=flat-square)
