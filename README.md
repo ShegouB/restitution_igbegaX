@@ -115,7 +115,7 @@ https://formspree.io/register
 
 **3. Mettre à jour le fichier HTML**
 
-Rechercher la ligne suivante dans `igbega_final.html` :
+Rechercher la ligne suivante dans `index.html` :
 ```javascript
 const res = await fetch('https://formspree.io/f/xxxxxxx', {
 ```
